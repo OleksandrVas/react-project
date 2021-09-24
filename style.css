@@ -1,0 +1,603 @@
+/* main fonts  */
+/* font-family: 'Libre Baskerville', serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Baskerville', serif; 
+    overflow-x: hidden;
+    height: 1000px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+[class*='col-']{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-xs-12 {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+.col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-xs-7 {
+    flex: 0 0 58.3333333%;
+    max-width: 58.3333333%;
+}
+.col-xs-5 {
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%;
+}
+/* header  ///////////////////////////////////////////////*/
+#main-header {
+    position: relative;
+    padding-top: 50px;
+    background:url(img/stylist-home-headerbg.jpg) 40% 60% ;
+    height: 678px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#main-header > .container {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.header-bottom-img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.burger-menu {
+    text-align: right;
+}
+.burger {
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    right: 60px;
+
+}
+.burger > span {
+    display: block;
+    width: 30px;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    transition: .15s ease-in-out;
+    
+}
+.burger > span:nth-child(2){
+    top: 9px;
+}
+.burger > span:last-child{
+    bottom:5px;
+}
+
+/* menu //////////////////////////////////////////// */
+
+.menu > ul {
+    display: none;
+}
+
+
+/* menu //////////////////////////////////////////////// */
+
+
+.navigation {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 280px;
+    transform: translateX(150%);
+    transition: all 500ms ease-in-out;
+}
+.active-menu > span:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+}
+.active-menu > span:nth-child(2) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+ .active-menu > span:last-child {
+    transform: scale(0);
+}
+
+/* first stilist //////////////////////////////////////// */
+
+#im-stilist-first {
+    padding-top: 150px;
+}
+.number-of-article {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 45px;
+    font-size: 13px;
+    font-weight: 500px;
+}
+.about-who {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+.about-work {
+    text-align: center;
+    font-weight: 350;
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+.info-stilist {
+    max-width: 310px;
+    line-height: 24px;
+    font-size: 15px;
+    color: rgb(75, 70, 70);
+    
+}
+.box-about {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Button article  first //////////////////////// */
+.button-article{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.button-article > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: -1px;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 3px solid #ebebeb ;
+    border-top: 3px solid white;
+}
+
+.button-article > a:hover {
+    padding: 10px 10px ;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    transition: .4s;
+}
+
+/* Fashion galleries /////////////////////////////////*/
+
+#fashion-galleries > .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.second-article-img {
+    background: url(img/stylist-home-man.jpg) 100% 0%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+.box-second-article {
+    color: white;
+    text-align: center;
+    max-width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ece4e4;
+}
+.fashion-article {
+    margin-bottom: 60px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.about-fashion {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.second > a {
+    color: #ece4e4;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+.second > a:hover {
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+/* img with girl second article //////////////////// */
+/*  */
+.col-xs-4{
+    flex: 0 0 33.3333333%;
+    max-width: 33.3333333%;
+}
+/*  */
+.first-bgc-article{
+    background-image: url(img/stylist-ukr-girl.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.first-bgc-article:hover{
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.second-bgc-article{
+    background-image: url(img/stylist-beaut-girl.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.second-bgc-article:hover {
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+
+
+.third-bgc-article{
+    background-image: url(img/stylist-heir-girl.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.third-bgc-article:hover {
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+}
+.without-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* do-you-need-style //////////////////////////// */
+
+#do-you-need-style {
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+.style-article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.third-style {
+    text-align: right;
+    font-size: 27px;
+    color: rgb(22, 17, 17);
+
+}
+.third-button-article {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bgc-fourth-article-bgc {
+    background-image: url(img/stylist-home-camerabg.jpg) ; 
+    background-repeat: no-repeat;
+    background-position: 70% 63%;
+    background-attachment: fixed;
+    display: flex;
+}
+.box-style{
+    margin-left: 120px;
+}
+.box-style > h2 {
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-size: 15px;
+}
+.box-style > h3 {
+    font-size: 35px;
+    font-weight: 400;
+    max-width: 340px;
+    line-height: 40px;
+}
+.col-xs-8 {
+    flex: 0 0 66.6666667%;
+    max-width: 66.6666667%;
+}
+.icon-style {
+    margin-top: 60px;
+}
+.style-by-icon {
+    display: flex;
+    position: relative;
+}
+.style-by-icon:last-child{
+    margin-top: 60px;
+}
+.style-icon-box {
+    border-top: 10px solid white ;
+}
+.style-by-icon:hover .style-icon-box {
+    transition: 1.2s;
+    border-top: 0 solid white ;
+}
+.box-info-style {
+    line-height: 25px;
+    font-size: 14px;
+    max-width: 230px;
+    margin-left: -40px;
+}
+
+.style-button {
+    text-align: center;
+    margin-right: 250px;
+}
+.position-style{
+    position: relative;
+}
+.position-style > div {
+    position: absolute;
+    top: 160px;
+    left: -100px;
+}
+
+/* stories-article/////////////////// */
+#stories-article{
+    background-image: url(img/stylist-home-blog-b.jpg);
+    padding-top: 150px;
+}
+.col-xs-10 {
+    flex: 0 0 83.3333333%;
+    min-width: 83.3333333% ;
+}
+.fifth-article {
+    color: white;
+}
+.about-stories{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.about-stories > span > a {
+    color: white;
+    text-decoration: none;
+} 
+.about-stories > span > a:hover {
+    color: rgb(231, 210, 210);
+    transition: 0.5s;
+}
+.fisrt-bgi-muffin-grop {
+    background-image: url(img/stylist-blog-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+.fisrt-bgi-muffin-grop:hover >.display-for-flex {
+    padding-bottom:15px;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.fisrt-bgi-muffin-grop:hover > .display-for-flex > hr {
+    width: 120px;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+}
+.muffin-group-img {
+    margin-top:70px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.second-bgi-muffin-grop {
+    background-image: url(img/stylist-blog-image2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+}
+.second-bgi-muffin-grop:hover >.display-for-flex {
+    padding-bottom:15px;
+    transition: ease 0.3s ;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.second-bgi-muffin-grop:hover > .display-for-flex > hr {
+    width: 120px;
+    transition: ease 0.3s  ;
+    visibility: visible;
+}
+
+
+.third-bgi-muffin-grop {
+    background-image: url(img/stylist-blog-image3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 205px;
+    margin-top: 15px;
+}
+.third-bgi-muffin-grop:hover >.display-for-flex {
+    padding-bottom:15px;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.third-bgi-muffin-grop:hover > .display-for-flex > hr {
+    width: 120px;
+    transition: 0.3s ease-in-out;
+    visibility: visible;
+}
+
+/* display-for-flex */
+.display-for-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.main-info-muffin-group{
+    color: rgba(189, 148, 148, 0.767);
+}
+.main-info-muffin-group div span a {
+    color: rgba(189, 148, 148, 0.767);
+    text-decoration: none;
+}
+.main-info-muffin-group div span a:hover {
+    color: rgb(185, 66, 66);
+}
+.display-for-flex  hr {
+    margin-top: 15px;
+    margin-left: 0;
+    height: 3.5px;
+    background-color: white;
+    width: 0px;
+    visibility: hidden;
+}
+.about-muffin-group {
+    color: white;
+    font-size: 25px;
+    margin-top: 13px;
+}
+.fifth-article-button{
+    margin-bottom: 170px;
+}
+
+#stories-article >.container > .row >.col-xs-12 >.button-article > a {
+    color: white;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+   
+}
+#stories-article >.container > .row >.col-xs-12 >.button-article >a:hover {
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+.some-text-storie {
+    font-weight: 500;
+    margin-top: 50px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/*contact-info-bottom //////////////////////////  */
+#contact-info-bottom {
+    background-color: black;
+    padding-bottom: 120px;
+}
+.contact-info-box {
+    margin-top:120px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.stylist {
+    color: white;
+    font-size: 30px;
+}
+.lorem-buttom{
+    margin-top: 50px;
+    color: #747474;
+    line-height: 25px;
+}
+.bottom-li {
+    margin-left: 25px;
+}
+.bottom-li >li{
+    margin-bottom: 20px;
+    
+}
+.bottom-li >li > a {
+    text-decoration: none;
+    color: #747474;
+}
+.bottom-li >li > a:hover {
+    border-bottom: 1px solid white;
+    transition: 0.1s;
+}
+.sign-up {
+    color: white;
+    font-size: 22px;
+}
+.sign-up-input {
+    margin-top: 25px;
+    width: 100%;
+    background-color: #1c1c1c;
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 7px;
+}
+.sign-up-input::placeholder{
+    color: #747474;
+    font-size: 17px;
+    font-weight: 500;
+}
+.subscribe-botton {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#1c1c1c ;
+    border: 1px solid #1c1c1c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* footer /////////////////////////////// */
+#footer {
+    border-top: 1px solid #1c1c1c;
+    background-color: black;
+    
+}
+#footer > .container > .row > .col-xs-10 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#footer > .container > .row > .col-xs-10 >div {
+    color:#747474;
+    font-size: 14px;
+    margin-left: 30px;
+}
+#footer > .container > .row > .col-xs-10 > div >  span > a {
+    color:#747474;
+    text-decoration: none;
+}
+#footer > .container > .row > .col-xs-10 > div >  span > a:hover {
+    border-bottom: 1px solid white; 
+    color: white;
+}
